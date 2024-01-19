@@ -5,13 +5,19 @@
       <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
           <!-- Add "active" class when you're on that page" -->
-          <a class="nav-link active" href="/">Home</a>
+          <router-link :to="{ name: 'home' }" class="nav-link active">
+            Home
+          </router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/login">Sign in</a>
+          <router-link :to="{ name: 'login' }" class="nav-link">
+            Sign in
+          </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/register">Sign up</router-link>
+          <router-link :to="{ name: 'register' }" class="nav-link">
+            Sign up
+          </router-link>
         </li>
       </ul>
     </div>
